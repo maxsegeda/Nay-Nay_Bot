@@ -37,7 +37,7 @@ bot.onText(/\/start/, (msg) => {
   }
 
   // Отправляем первое приветствие и добавляем нового пользователя в массив
-  const welcomeMessage = ``;
+  const welcomeMessage = `👋`;
   bot.sendMessage(chatId, welcomeMessage, getMainMenuMarkup());
   usersData.push({ username, chatId });
 
