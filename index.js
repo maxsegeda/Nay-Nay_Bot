@@ -270,5 +270,9 @@ bot.onText(/\/sendallphoto/, async (msg) => {
 
   photoFileId = "";
 });
+const PORT = process.env.PORT || 3000; // Используйте порт, предоставленный Heroku, или 3000 по умолчанию
+bot.listen(PORT, () => {
+  console.log(`Бот запущен на порте ${PORT}`);
+});
 
 setCommands();
