@@ -1,9 +1,5 @@
 [
   {
-    "username": "max_segeda",
-    "chatId": 622782478
-  },
-  {
     "username": "newschernivtsi1",
     "chatId": 615793393
   },
@@ -13,5 +9,9 @@
   {
     "username": "sirkosmm",
     "chatId": 6530268375
+  },
+  {
+    "username": "max_segeda",
+    "chatId": 622782478
   }
 ]
