@@ -3,10 +3,7 @@ const token = "7101459473:AAE0Ug6MZ5irLKtBJzAdqK-c0BS6Pmk23vY";
 const bot = new TelegramApi(token, { polling: true });
 const fs = require("fs");
 
-const PORT = process.env.PORT || 3000; // Используйте порт, предоставленный Heroku, или 3000 по умолчанию
-bot.listen(PORT, () => {
-  console.log(`Бот запущен на порте ${PORT}`);
-});
+
 const setCommands = () => {
   bot.setMyCommands([{ command: "/start", description: "Старт" }]);
 };
