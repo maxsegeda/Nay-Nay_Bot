@@ -3,6 +3,7 @@ const token = "7101459473:AAE0Ug6MZ5irLKtBJzAdqK-c0BS6Pmk23vY";
 const bot = new TelegramApi(token, { polling: true });
 const fs = require("fs");
 
+
 const setCommands = () => {
   bot.setMyCommands([{ command: "/start", description: "Старт" }]);
 };
@@ -270,5 +271,4 @@ bot.onText(/\/sendallphoto/, async (msg) => {
 
   photoFileId = "";
 });
-
 setCommands();
